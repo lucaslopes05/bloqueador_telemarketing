@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "165781544417",
+    "project_id": "bloqueadortelemarketing",
+    "storage_bucket": "bloqueadortelemarketing.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:165781544417:android:157438ec3c0b8857f0c6a0",
+        "android_client_info": {
+          "package_name": "com.example.bloqueador_telemarketing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "165781544417-cas0jbbtg3uvtu9ihn30qu01gfu9eqi0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZHHNh2uwT0yZO8fXCAWI5lqx6WlU9eV8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "165781544417-cas0jbbtg3uvtu9ihn30qu01gfu9eqi0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

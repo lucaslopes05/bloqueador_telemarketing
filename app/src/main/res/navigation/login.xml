@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.bloqueador_telemarketing.ui.fragment.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_cadastrarFragment"
+            app:destination="@id/cadastrarFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_esqueciSenhaFragment"
+            app:destination="@id/esqueciSenhaFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_appActivity"
+            app:destination="@id/appActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastrarFragment"
+        android:name="com.example.bloqueador_telemarketing.ui.fragment.CadastrarFragment"
+        android:label="fragment_cadastrar"
+        tools:layout="@layout/fragment_cadastrar" >
+        <action
+            android:id="@+id/action_cadastrarFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/esqueciSenhaFragment"
+        android:name="com.example.bloqueador_telemarketing.ui.fragment.EsqueciSenhaFragment"
+        android:label="fragment_esqueci_senha"
+        tools:layout="@layout/fragment_esqueci_senha" >
+        <action
+            android:id="@+id/action_esqueciSenhaFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/appActivity"
+        android:name="com.example.bloqueador_telemarketing.ui.activity.AppActivity"
+        android:label="activity_app"
+        tools:layout="@layout/activity_app" />
+</navigation>
