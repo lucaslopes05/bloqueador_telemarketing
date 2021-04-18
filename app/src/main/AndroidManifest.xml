@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bloqueador_telemarketing">
 
+
     <application
         android:name=".BloqueadorApp"
         android:allowBackup="true"
@@ -16,6 +17,7 @@
             android:label="@string/title_activity_app">
 
         </activity>
+
         <activity android:name=".ui.activity.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
