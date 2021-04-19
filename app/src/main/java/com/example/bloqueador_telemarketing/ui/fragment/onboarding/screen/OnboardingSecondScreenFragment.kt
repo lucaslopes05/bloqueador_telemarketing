@@ -16,10 +16,17 @@ class OnboardingSecondScreenFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?): View? {
+<<<<<<< HEAD
 
             binding = FragmentOnboardingSecondScreenBinding.inflate(inflater, container, false)
             binding.lifecycleOwner = this
             return binding.root
+=======
+        binding = FragmentOnboardingSecondScreenBinding.inflate(inflater, container, false)
+        binding.lifecycleOwner = this
+
+        return binding.root
+>>>>>>> 63b748b619cec6a0f0e7e53dbbe8e9fd3c88cc58
     }
 
 }

@@ -17,10 +17,17 @@ class OnboardingFirstScreenFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?): View? {
+<<<<<<< HEAD
 
             binding = FragmentOnboardingFirstScreenBinding.inflate(inflater, container, false)
             binding.lifecycleOwner = this
             return binding.root
+=======
+        binding = FragmentOnboardingFirstScreenBinding.inflate(inflater, container, false)
+        binding.lifecycleOwner = this
+
+        return binding.root
+>>>>>>> 63b748b619cec6a0f0e7e53dbbe8e9fd3c88cc58
     }
 
 }
