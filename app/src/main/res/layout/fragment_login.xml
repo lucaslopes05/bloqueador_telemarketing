@@ -13,6 +13,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="?android:colorBackground"
         tools:context=".ui.fragment.LoginFragment">
 
         <TextView
@@ -20,8 +21,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="@string/esqueci_senha"
             android:onClick="@{elementosLogin::irEsqueciSenha}"
+            android:text="@string/esqueci_senha"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -42,8 +43,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
-            android:text="@string/entrar"
             android:onClick="@{elementosLogin::irEntrar}"
+            android:text="@string/entrar"
             app:layout_constraintBottom_toTopOf="@+id/tvCadastrar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -75,6 +76,19 @@
             app:layout_constraintBottom_toTopOf="@+id/etLoginSenha"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="232dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginEnd="130dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.24000001"
+            app:srcCompat="@drawable/bloqueio_de_chamada_square_3x" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
