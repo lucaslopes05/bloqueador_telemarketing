@@ -16,18 +16,13 @@ class OnboardingFirstScreenFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?): View? {
-
-
-            binding = FragmentOnboardingFirstScreenBinding.inflate(inflater, container, false)
-            binding.lifecycleOwner = this
-            return binding.root
+        savedInstanceState: Bundle?
+    ): View {
 
         binding = FragmentOnboardingFirstScreenBinding.inflate(inflater, container, false)
         binding.lifecycleOwner = this
 
         return binding.root
-
     }
 
 }

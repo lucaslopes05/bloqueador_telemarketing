@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/login"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/onboardingFragment">
 
     <fragment
         android:id="@+id/loginFragment"
@@ -43,4 +43,13 @@
         android:name="com.example.bloqueador_telemarketing.ui.activity.AppActivity"
         android:label="activity_app"
         tools:layout="@layout/activity_app" />
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.example.bloqueador_telemarketing.ui.fragment.onboarding.OnboardingFragment"
+        android:label="OnboardingFragment"
+        tools:layout="@layout/fragment_onboarding">
+        <action
+            android:id="@+id/action_onboardingFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
 </navigation>
