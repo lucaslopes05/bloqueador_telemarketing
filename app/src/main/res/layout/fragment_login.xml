@@ -40,6 +40,7 @@
 
         <Button
             android:id="@+id/bLoginEntrar"
+            style="@style/Widget.MaterialComponents.Button.MainBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
@@ -87,7 +88,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/bloqueio_de_chamada_square_3x" />
+            app:srcCompat="@drawable/login" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

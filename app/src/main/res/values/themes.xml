@@ -1,9 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Bloqueador_telemarketing" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.Bloqueador_telemarketing" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/midnight_blue</item>
-        <item name="colorPrimaryVariant">@color/royal_blue_dark</item>
+        <item name="colorPrimaryVariant">@color/center_gradient</item>
         <item name="colorOnPrimary">@color/champagne</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/cedar_chest</item>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="Widget.MaterialComponents.TextView.OnBoardText">
+        <item name="android:textAppearance">@style/Widget.MaterialComponents.TextView.OnBoardTextType</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="Widget.MaterialComponents.Button.OnBoardBtn">
+        <item name="cornerRadius">15dp</item>
+        <item name="android:backgroundTint">@color/start_gradient</item>
+    </style>
+
+</resources>

@@ -17,11 +17,12 @@
 
         <Button
             android:id="@+id/btCadastrarEnviar"
+            style="@style/Widget.MaterialComponents.Button.MainBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="@string/enviar"
             android:onClick="@{elementosCadastrar::cadastrarUsuario}"
+            android:text="@string/enviar"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />

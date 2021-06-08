@@ -22,6 +22,17 @@ class CadastrarFragment : Fragment() {
     @Inject lateinit var auth: FirebaseAuth
     private lateinit var binding : FragmentCadastrarBinding
 
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        binding = FragmentCadastrarBinding.inflate(inflater, container, false)
+        binding.elementosCadastrar = this
+        binding.lifecycleOwner = this
+
+        return binding.root
+    }
+
     fun cadastrarUsuario(v: View) {
         if(binding.etCadastrarSenha.text.toString() != binding.etCadastrarSenhaNovamente.text.toString())
             Toast.makeText(context,"Os campos senha e confirmar senha são diferentes",Toast.LENGTH_LONG).show()
@@ -40,17 +51,4 @@ class CadastrarFragment : Fragment() {
         }
 
     }
-
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        binding = FragmentCadastrarBinding.inflate(inflater, container, false)
-        binding.elementosCadastrar = this
-        binding.lifecycleOwner = this
-
-        return binding.root
-    }
-
 }

@@ -13,6 +13,6 @@ import dagger.hilt.components.SingletonComponent
 class LoginModule {
 
     @Provides
-    fun FirebaseProvider() = Firebase.auth
+    fun firebaseProvider() = Firebase.auth
 
 }

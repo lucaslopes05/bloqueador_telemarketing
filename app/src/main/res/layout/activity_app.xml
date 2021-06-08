@@ -6,13 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".ui.activity.AppActivity">
 
-        <fragment
-            android:id="@+id/fragment2"
-            android:name="com.example.bloqueador_telemarketing.ui.fragment.TesteLogadoFragment"
-            android:layout_width="wrap_content"
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView"
+            android:name="com.example.bloqueador_telemarketing.ui.fragment.ActionBarFragment"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView2"
+            android:name="com.example.bloqueador_telemarketing.ui.fragment.AppMainFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragmentContainerView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

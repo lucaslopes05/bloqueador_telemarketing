@@ -15,30 +15,40 @@
         tools:context=".ui.fragment.onboarding.screen.OnboardingSecondScreenFragment" >
 
         <View
-            android:id="@+id/view2"
-            android:layout_width="411dp"
-            android:layout_height="577dp"
-            android:background="@drawable/gradient_blank"
+            android:id="@+id/view3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/gradient_onboarding"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvOnBoardingThird"
+            style="@style/Widget.MaterialComponents.TextView.OnBoardText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="120dp"
+            android:text="@string/onboarding_second_fragment_text"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="0dp"
+        <ImageView
+            android:id="@+id/ivOnBoardingThird"
+            style="@style/Widget.MaterialComponents.TextView.OnBoardTextType"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="BLOQUEIO DE CHAMADAS"
-            android:textAlignment="center"
-            android:textColor="#C11919"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="80dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.152" />
+            app:layout_constraintTop_toTopOf="@+id/view3"
+            app:srcCompat="@drawable/nao_me_pertube" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     </layout>

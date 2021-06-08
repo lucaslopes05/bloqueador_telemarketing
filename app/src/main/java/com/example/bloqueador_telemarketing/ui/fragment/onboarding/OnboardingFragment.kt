@@ -11,6 +11,7 @@ import com.example.bloqueador_telemarketing.databinding.FragmentOnboardingBindin
 import com.example.bloqueador_telemarketing.ui.adapter.OnboardingAdapter
 import com.example.bloqueador_telemarketing.ui.fragment.onboarding.screen.OnboardingFirstScreenFragment
 import com.example.bloqueador_telemarketing.ui.fragment.onboarding.screen.OnboardingSecondScreenFragment
+import com.example.bloqueador_telemarketing.ui.fragment.onboarding.screen.OnboardingThirdScreenFragment
 import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.WithFragmentBindings
 
@@ -33,6 +34,7 @@ class OnboardingFragment : Fragment() {
         val pages = arrayListOf(
             OnboardingFirstScreenFragment(),
             OnboardingSecondScreenFragment(),
+            OnboardingThirdScreenFragment()
         )
 
 

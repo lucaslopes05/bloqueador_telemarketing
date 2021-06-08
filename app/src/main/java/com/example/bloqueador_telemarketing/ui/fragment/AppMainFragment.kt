@@ -5,22 +5,22 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.bloqueador_telemarketing.databinding.FragmentTesteLogadoBinding
+import com.example.bloqueador_telemarketing.databinding.FragmentAppMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.WithFragmentBindings
 
 @AndroidEntryPoint
 @WithFragmentBindings
 
-class TesteLogadoFragment : Fragment() {
+class AppMainFragment : Fragment() {
 
-    private lateinit var binding : FragmentTesteLogadoBinding
+    private lateinit var binding : FragmentAppMainBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentTesteLogadoBinding.inflate(inflater,container,false)
+        binding = FragmentAppMainBinding.inflate(inflater,container,false)
         binding.elementosTesteLogado = this
         binding.lifecycleOwner = this
 
