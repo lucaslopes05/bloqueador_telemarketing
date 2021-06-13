@@ -12,12 +12,16 @@ import com.example.bloqueador_telemarketing.ui.adapter.OnboardingAdapter
 import com.example.bloqueador_telemarketing.ui.fragment.onboarding.screen.OnboardingFirstScreenFragment
 import com.example.bloqueador_telemarketing.ui.fragment.onboarding.screen.OnboardingSecondScreenFragment
 import com.example.bloqueador_telemarketing.ui.fragment.onboarding.screen.OnboardingThirdScreenFragment
+import com.google.firebase.auth.FirebaseAuth
 import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.WithFragmentBindings
+import javax.inject.Inject
 
 @AndroidEntryPoint
 @WithFragmentBindings
 class OnboardingFragment : Fragment() {
+
+    @Inject lateinit var auth : FirebaseAuth
 
     private lateinit var binding: FragmentOnboardingBinding
 
@@ -52,7 +56,12 @@ class OnboardingFragment : Fragment() {
     }
 
     fun irLogin(v: View) {
-        findNavController().navigate(R.id.action_onboardingFragment_to_loginFragment)
+        if(auth.currentUser!=null){
+            findNavController().navigate(R.id.action_onboardingFragment_to_appActivity)
+        }else{
+            findNavController().navigate(R.id.action_onboardingFragment_to_loginFragment)
+        }
+
     }
 
 

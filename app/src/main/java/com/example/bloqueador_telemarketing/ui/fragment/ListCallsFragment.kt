@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.example.bloqueador_telemarketing.R
 import com.example.bloqueador_telemarketing.databinding.FragmentListCallsBinding
 import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.WithFragmentBindings
@@ -15,6 +17,10 @@ import dagger.hilt.android.WithFragmentBindings
 class ListCallsFragment : Fragment() {
 
     private lateinit var binding : FragmentListCallsBinding
+
+    fun irAddBlackList(v : View){
+        findNavController().navigate(R.id.action_listCallsFragment_to_addBlackListFragment)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

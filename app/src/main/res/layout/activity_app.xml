@@ -6,25 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".ui.activity.AppActivity">
 
-        <fragment
-            android:id="@+id/bar"
-            android:name="com.example.bloqueador_telemarketing.ui.fragment.ActionBarFragment"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="409dp"
+            android:layout_height="729dp"
+            app:defaultNavHost="true"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <fragment
-            android:id="@+id/main"
-            android:name="com.example.bloqueador_telemarketing.ui.fragment.ListCallsFragment"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/bar" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:navGraph="@navigation/app" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
