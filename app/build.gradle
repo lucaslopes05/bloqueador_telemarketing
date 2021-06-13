@@ -82,4 +82,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics'
     implementation 'com.google.firebase:firebase-auth-ktx'
 
+    /** Google Maps */
+    implementation 'com.google.android.gms:play-services-maps:17.0.1'
+
 }

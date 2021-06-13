@@ -16,5 +16,6 @@
     <string name="add_black_list">Adicionar na lista negra</string>
     <string name="addNumberHint">Digite um número de telefone com DDD</string>
     <string name="btAddNumberHint">Adicionar Número</string>
+    <string name="btMap">Mapa</string>
 
 </resources>
