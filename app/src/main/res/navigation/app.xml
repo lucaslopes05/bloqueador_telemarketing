@@ -7,7 +7,8 @@
     <fragment
         android:id="@+id/listCallsFragment"
         android:name="com.example.bloqueador_telemarketing.ui.fragment.ListCallsFragment"
-        android:label="ListCallsFragment" >
+        android:label="ListCallsFragment"
+        tools:layout="@layout/fragment_list_calls">
         <action
             android:id="@+id/action_listCallsFragment_to_addBlackListFragment"
             app:destination="@id/addBlackListFragment" />
@@ -15,5 +16,6 @@
     <fragment
         android:id="@+id/addBlackListFragment"
         android:name="com.example.bloqueador_telemarketing.ui.fragment.AddBlackListFragment"
-        android:label="AddBlackListFragment" />
+        android:label="AddBlackListFragment"
+        tools:layout="@layout/fragment_add_black_list"/>
 </navigation>
