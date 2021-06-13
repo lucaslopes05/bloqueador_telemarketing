@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.bloqueador_telemarketing.R
 import com.example.bloqueador_telemarketing.databinding.FragmentLoginBinding
+import com.example.bloqueador_telemarketing.ui.activity.LoginActivity
 import com.google.firebase.auth.FirebaseAuth
 import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.WithFragmentBindings
@@ -38,7 +39,7 @@ class LoginFragment : Fragment() {
         login.addOnCompleteListener { resultado ->
             if(login.isSuccessful) {
                 findNavController().navigate(R.id.action_loginFragment_to_appActivity)
-
+                LoginActivity::finish;
             } else {
                 Toast.makeText(context, "e-mail ou senha inválidos", Toast.LENGTH_LONG).show()
             }

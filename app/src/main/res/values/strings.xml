@@ -15,9 +15,6 @@
     <string name="onboarding_first_fragment_text">Bloqueie aquelas chamadas indesejadas automaticamente</string>
     <string name="onboarding_second_fragment_text">Bloqueio por DDD, listas individuais, grupos ou mesmo pelos reports da comunidade</string>
     <string name="onboarding_third_fragment_text">Logue em sua conta ou cadastre-se e tenha acesso imediatamente</string>
-    <!--
-    This string is used for square devices and overridden by hello_world in
-    values-round/strings.xml for round devices.
-    -->
-    <string name="hello_world">Hello Square World!</string>
+    <string name="add_black_list">Adicionar na lista negra</string>
+
 </resources>

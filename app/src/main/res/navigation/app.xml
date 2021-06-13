@@ -3,9 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/app"
-    app:startDestination="@id/appMainFragment">
+    app:startDestination="@id/listCallsFragment">
     <fragment
-        android:id="@+id/appMainFragment"
-        android:name="com.example.bloqueador_telemarketing.ui.fragment.AppMainFragment"
-        android:label="TesteLogadoFragment" />
+        android:id="@+id/listCallsFragment"
+        android:name="com.example.bloqueador_telemarketing.ui.fragment.ListCallsFragment"
+        android:label="ListCallsFragment" >
+        <action
+            android:id="@+id/action_listCallsFragment_to_addBlackListFragment"
+            app:destination="@id/addBlackListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addBlackListFragment"
+        android:name="com.example.bloqueador_telemarketing.ui.fragment.AddBlackListFragment"
+        android:label="AddBlackListFragment" />
 </navigation>

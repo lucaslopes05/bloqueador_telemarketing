@@ -6,24 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".ui.activity.AppActivity">
 
-
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/fragmentContainerView"
+        <fragment
+            android:id="@+id/bar"
             android:name="com.example.bloqueador_telemarketing.ui.fragment.ActionBarFragment"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/fragmentContainerView2"
-            android:name="com.example.bloqueador_telemarketing.ui.fragment.AppMainFragment"
+        <fragment
+            android:id="@+id/main"
+            android:name="com.example.bloqueador_telemarketing.ui.fragment.ListCallsFragment"
             android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/fragmentContainerView" />
+            app:layout_constraintTop_toBottomOf="@+id/bar" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+

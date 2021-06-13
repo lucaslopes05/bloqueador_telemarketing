@@ -45,8 +45,6 @@ class OnboardingFragment : Fragment() {
         )
 
 
-        //
-        //binding.wormDotsIndicator.setViewPager2(binding.vpOnboarding)
 
         return binding.root
 

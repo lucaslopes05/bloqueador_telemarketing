@@ -4,31 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools">
     <data>
         <variable
-            name="barMenu"
+            name="barBlackList"
             type="com.example.bloqueador_telemarketing.ui.fragment.ActionBarFragment" />
+
         <variable
-            name="barSearch"
-            type="com.example.bloqueador_telemarketing.ui.fragment.ActionBarFragment" />
-        <variable
-            name="barMore"
+            name="barAddBlackList"
             type="com.example.bloqueador_telemarketing.ui.fragment.ActionBarFragment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="50sp"
+        android:layout_height="55sp"
         android:background="@color/start_gradient"
         tools:context=".ui.fragment.ActionBarFragment">
 
         <ImageView
-            android:id="@+id/ivActionBarMenu"
+            android:id="@+id/ivBlackList"
             android:layout_width="25sp"
-            android:layout_height="25sp"
+            android:layout_height="0dp"
             android:layout_marginStart="8dp"
+            android:onClick="@{barBlackList::blackList}"
             android:src="@drawable/menu"
-            android:onClick="@{barMenu::menu}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_marginEnd="16dp"
+            android:onClick="@{barBlackList::addBlackList}"
+            android:src="@drawable/reply"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
@@ -39,30 +48,7 @@
             android:layout_marginStart="8dp"
             android:text="@string/app_name"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/ivActionBarMenu"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/ivSearch"
-            android:layout_width="25sp"
-            android:layout_height="25sp"
-            android:layout_marginEnd="8dp"
-            android:onClick="@{barMenu::search}"
-            android:src="@drawable/search"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/ivOptions"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/ivOptions"
-            android:layout_width="25sp"
-            android:layout_height="25sp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="8dp"
-            android:onClick="@{barMenu::options}"
-            android:src="@drawable/more"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivBlackList"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
