@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivContactName"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_help" />
+
+    <TextView
+        android:id="@+id/tvNumberBlackList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Nome Contato"
+        app:layout_constraintStart_toEndOf="@+id/ivContactName"
+        app:layout_constraintTop_toTopOf="@+id/ivContactName" />
+
+    <TextView
+        android:id="@+id/tvNumContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Numero"
+        app:layout_constraintBottom_toBottomOf="@+id/ivContactName"
+        app:layout_constraintStart_toEndOf="@+id/ivContactName" />
+
+    <TextView
+        android:id="@+id/tvHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Hora"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvHour"
+        app:layout_constraintEnd_toStartOf="@+id/tvHour"
+        app:layout_constraintTop_toTopOf="@+id/tvHour"
+        app:srcCompat="@android:drawable/sym_call_incoming" />
+
+    <View
+        android:id="@+id/viewBlackList"
+        android:layout_width="411dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="16dp"
+        android:background="?colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivContactName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
