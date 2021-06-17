@@ -55,7 +55,6 @@ class LoginFragment : Fragment() {
         binding.elementosLogin = this
         binding.lifecycleOwner = this
 
-        // Inflate the layout for this fragment
         return binding.root
     }
 

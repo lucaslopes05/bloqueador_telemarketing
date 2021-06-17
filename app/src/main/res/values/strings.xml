@@ -16,5 +16,14 @@
     <string name="add_black_list">Adicionar na lista negra</string>
     <string name="addNumberHint">Digite um número de telefone com DDD</string>
     <string name="btAddNumberHint">Adicionar Número</string>
+    <string name="chatbot_bot">Chatbot</string>
+    <string name="chatbot_bot_text">Mensagem do Bot</string>
+    <string name="chatbot_my">Mensagem do Usuario</string>
+    <string name="chatbot_fragment_chatbot">Digite sua mensagem</string>
 
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
 </resources>
