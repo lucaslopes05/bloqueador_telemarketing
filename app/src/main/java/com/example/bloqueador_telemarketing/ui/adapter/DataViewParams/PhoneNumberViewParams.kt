@@ -1,4 +1,4 @@
-package com.example.bloqueador_telemarketing.ui.fragment.DataViewParams
+package com.example.bloqueador_telemarketing.ui.adapter.DataViewParams
 
 data class PhoneNumberViewParams(
     var id: Int = 0,

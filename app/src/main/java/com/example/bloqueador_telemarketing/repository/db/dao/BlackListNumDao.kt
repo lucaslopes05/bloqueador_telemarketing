@@ -1,7 +1,7 @@
-package com.example.bloqueador_telemarketing.repository.data.dao
+package com.example.bloqueador_telemarketing.repository.db.dao
 
 import androidx.room.*
-import com.example.bloqueador_telemarketing.repository.data.NumEntity
+import com.example.bloqueador_telemarketing.repository.db.NumEntity
 
 //talvez anotar databinding
 @Dao

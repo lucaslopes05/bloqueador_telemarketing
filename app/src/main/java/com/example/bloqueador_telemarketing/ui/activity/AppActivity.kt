@@ -4,9 +4,9 @@ import android.os.Bundle
 import androidx.fragment.app.FragmentActivity
 import androidx.room.Room
 import com.example.bloqueador_telemarketing.R
-import com.example.bloqueador_telemarketing.repository.BlackListDB
-import com.example.bloqueador_telemarketing.repository.BlackListNum
-import com.example.bloqueador_telemarketing.repository.BlackListNumDao
+import com.example.bloqueador_telemarketing.repository.db.BlackListDB
+import com.example.bloqueador_telemarketing.repository.db.NumEntity
+import com.example.bloqueador_telemarketing.repository.db.dao.BlackListNumDao
 import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.WithFragmentBindings
 import kotlinx.coroutines.GlobalScope
@@ -21,26 +21,18 @@ class AppActivity : FragmentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_app)
-
-        database = Room.databaseBuilder(
-            applicationContext,
-            BlackListDB::class.java,
-            "black-list-db"
-        ).build()
-
-        dao = database.getTBlackListNumDao()
         
     }
 
     fun getDao(numAdd : String) {
 
         GlobalScope.launch {
-            val numAddBL = BlackListNum(number = numAdd)
-            dao.insertBlackListNum(numAddBL)
+            val numAddBL = NumEntity(number = numAdd)
+//            dao.insertBlackListNum(numAddBL)
 //            withContext(Dispatchers.Main){
 //                binding.etPhone.setText("")
 //                Toast.makeText(context,"Pode crer!",Toast.LENGTH_SHORT).show()
-//            }
+//           }
 
         }
     }

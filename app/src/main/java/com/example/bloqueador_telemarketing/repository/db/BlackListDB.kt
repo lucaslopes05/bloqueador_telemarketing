@@ -1,10 +1,10 @@
-package com.example.bloqueador_telemarketing.repository.data
+package com.example.bloqueador_telemarketing.repository.db
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.bloqueador_telemarketing.repository.data.dao.BlackListNumDao
+import com.example.bloqueador_telemarketing.repository.db.dao.BlackListNumDao
 
 @Database(entities = [NumEntity::class], version = 1)
 abstract class BlackListDB: RoomDatabase() {

@@ -4,18 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.bloqueador_telemarketing.databinding.FragmentAddBlackListBinding
-import com.example.bloqueador_telemarketing.repository.BlackListNum
-import com.example.bloqueador_telemarketing.repository.BlackListNumDao
 import com.example.bloqueador_telemarketing.ui.activity.AppActivity
 import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.WithFragmentBindings
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 
 @AndroidEntryPoint
 @WithFragmentBindings
