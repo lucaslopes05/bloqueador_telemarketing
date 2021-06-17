@@ -8,6 +8,9 @@
         <variable
             name="addBlackList"
             type="com.example.bloqueador_telemarketing.ui.fragment.AddBlackListFragment" />
+        <variable
+            name="testeDao"
+            type="com.example.bloqueador_telemarketing.ui.activity.AppActivity" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
