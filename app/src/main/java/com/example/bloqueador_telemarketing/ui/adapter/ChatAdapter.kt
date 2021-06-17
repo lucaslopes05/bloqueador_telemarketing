@@ -12,7 +12,6 @@ class ChatAdapter(messageList: MutableList<ChatbotResponse>): RecyclerView.Adapt
     private var messages: MutableList<ChatbotResponse> = messageList
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ChatAdapter.ViewHolder {
 
-//        println(messages[messages.size-1].TIPO)
         if (messages[messages.size-1].TIPO ==2){
             val card = LayoutInflater.from(parent.context).inflate(R.layout.bot_message_layout,parent,false)
             return ViewHolder(card,2)
@@ -33,7 +32,6 @@ class ChatAdapter(messageList: MutableList<ChatbotResponse>): RecyclerView.Adapt
 
     override fun onBindViewHolder(holder: ChatAdapter.ViewHolder, position: Int) {
         holder.itemText.text = messages[position].message
-//        println(messages[position].TIPO)
     }
 
     inner class ViewHolder(itemView: View, position: Int): RecyclerView.ViewHolder(itemView){

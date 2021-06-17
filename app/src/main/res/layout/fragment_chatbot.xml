@@ -38,7 +38,7 @@
             android:layout_marginBottom="12dp"
             android:backgroundTint="@color/roman_silver"
             android:ems="10"
-            android:hint="Digite sua mensagem"
+            android:hint="@string/chatbot_fragment_chatbot"
             android:inputType="textPersonName"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@id/button_Send"
