@@ -1,8 +1,7 @@
-package com.example.bloqueador_telemarketing.repository
+package com.example.bloqueador_telemarketing.repository.data.dao
 
 import androidx.room.*
-import com.example.bloqueador_telemarketing.ui.activity.AppActivity
-import dagger.hilt.android.WithFragmentBindings
+import com.example.bloqueador_telemarketing.repository.data.NumEntity
 
 //talvez anotar databinding
 @Dao
@@ -12,8 +11,8 @@ interface BlackListNumDao {
 //    suspend fun getTBlackListNumDao(text: String): List<BlackListNum>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun insertBlackListNum(t: BlackListNum)
+    suspend fun insertBlackListNum(t: NumEntity)
 
     @Delete
-    suspend fun deleteBlackListNum(t: BlackListNum)
+    suspend fun deleteBlackListNum(t: NumEntity)
 }
