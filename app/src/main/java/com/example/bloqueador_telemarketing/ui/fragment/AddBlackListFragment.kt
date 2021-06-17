@@ -22,7 +22,7 @@ import kotlinx.coroutines.withContext
 class AddBlackListFragment : Fragment() {
 
     private lateinit var binding : FragmentAddBlackListBinding
-    private lateinit var daoAdd : AppActivity
+    private lateinit var dao : BlackListNumDao
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,6 +33,7 @@ class AddBlackListFragment : Fragment() {
         binding.addBlackList = this
         binding.lifecycleOwner = this
 
+        dao = (activity as AppActivity).getDao()
         // Inflate the layout for this fragment
         return binding.root
     }
@@ -40,8 +41,15 @@ class AddBlackListFragment : Fragment() {
     fun addBlackList(v: View) {
 
         val numAdd = binding.etPhone.text.toString()
-        daoAdd = AppActivity()
-        daoAdd.getDao(numAdd)
+
+        GlobalScope.launch {
+            val numAddBL = BlackListNum(number = numAdd)
+            dao.insertBlackListNum(numAddBL)
+            withContext(Dispatchers.Main){
+                binding.etPhone.setText("")
+                Toast.makeText(context,"Pode crer!",Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 
 

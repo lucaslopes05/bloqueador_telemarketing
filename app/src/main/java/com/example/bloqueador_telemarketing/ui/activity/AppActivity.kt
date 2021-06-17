@@ -28,21 +28,11 @@ class AppActivity : FragmentActivity() {
             "black-list-db"
         ).build()
 
-        dao = database.getTBlackListNumDao()
-        
     }
 
-    fun getDao(numAdd : String) {
-
-        GlobalScope.launch {
-            val numAddBL = BlackListNum(number = numAdd)
-            dao.insertBlackListNum(numAddBL)
-//            withContext(Dispatchers.Main){
-//                binding.etPhone.setText("")
-//                Toast.makeText(context,"Pode crer!",Toast.LENGTH_SHORT).show()
-//            }
-
-        }
+    fun getDao(): BlackListNumDao
+    {
+        return database.getTBlackListNumDao()
     }
 }
 
