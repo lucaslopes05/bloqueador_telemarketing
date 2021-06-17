@@ -15,6 +15,7 @@
     <style name="Widget.MaterialComponents.Button.MainBtn">
         <item name="cornerRadius">15dp</item>
         <item name="textAllCaps">true</item>
+        <item name="android:backgroundTint">@color/start_gradient</item>
     </style>
 
     <style name="ActionBar">

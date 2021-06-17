@@ -5,37 +5,41 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+        <variable
+            name="addBlackList"
+            type="com.example.bloqueador_telemarketing.ui.fragment.AddBlackListFragment" />
+        <variable
+            name="testeDao"
+            type="com.example.bloqueador_telemarketing.ui.activity.AppActivity" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         tools:context=".ui.fragment.AddBlackListFragment">
+
+        <Button
+            android:id="@+id/btAddBlackList"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:onClick="@{addBlackList::addBlackList}"
+            android:text="@string/add_black_list"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPhone" />
 
         <EditText
             android:id="@+id/etPhone"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginBottom="16dp"
             android:ems="10"
-            android:hint="@string/addNumberHint"
             android:inputType="phone"
-            app:layout_constraintBottom_toTopOf="@+id/btAddBlackList"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <Button
-            android:id="@+id/btAddBlackList"
-            style="@style/Widget.MaterialComponents.Button.OnBoardBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/add_black_list"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
