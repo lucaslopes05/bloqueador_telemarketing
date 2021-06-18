@@ -7,9 +7,9 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 
 class OnboardingAdapter(
         private val list: ArrayList<Fragment>,
-        fagmentManager: FragmentManager,
+        fragmentManager: FragmentManager,
         lifecycle: Lifecycle
-) : FragmentStateAdapter(fagmentManager, lifecycle) {
+) : FragmentStateAdapter(fragmentManager, lifecycle) {
 
     override fun getItemCount() = list.size
     override fun createFragment(position: Int)= list[position]

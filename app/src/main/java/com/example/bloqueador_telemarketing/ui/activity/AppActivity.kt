@@ -19,7 +19,3 @@ class AppActivity : FragmentActivity() {
         setContentView(R.layout.activity_app)
     }
 }
-
-
-
-

@@ -2,10 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bloqueador_telemarketing">
 
+
+
     <uses-permission android:name="android.permission.MANAGE_OWN_CALLS"/>
     <uses-permission android:name="android.permission.READ_CALL_LOG"/>
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
 
     <application
         android:name=".BloqueadorApp"
@@ -16,12 +20,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Bloqueador_telemarketing">
 
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCSkrcva5PrqKQ180iS7Zv1h0JfIw1H_iU" />
+
         <activity
             android:name=".ui.activity.AppActivity"
-            android:label="@string/title_activity_app">
-
-        </activity>
-
+            android:label="@string/title_activity_app" />
         <activity android:name=".ui.activity.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,11 +35,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
-
     </application>
-
-
 
 </manifest>

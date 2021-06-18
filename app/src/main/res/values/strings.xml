@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">Bloqueador Telemarketing</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="vamos_la">Vamos lá!</string>
     <string name="esqueci_senha">Esqueci minha senha</string>
     <string name="cadastro">Não possui cadastro? Clique aqui</string>
@@ -16,5 +14,17 @@
     <string name="onboarding_second_fragment_text">Bloqueio por DDD, listas individuais, grupos ou mesmo pelos reports da comunidade</string>
     <string name="onboarding_third_fragment_text">Logue em sua conta ou cadastre-se e tenha acesso imediatamente</string>
     <string name="add_black_list">Adicionar na lista negra</string>
+    <string name="addNumberHint">Digite um número de telefone com DDD</string>
+    <string name="btAddNumberHint">Adicionar Número</string>
+    <string name="chatbot_bot">Chatbot</string>
+    <string name="chatbot_bot_text">Mensagem do Bot</string>
+    <string name="chatbot_my">Mensagem do Usuario</string>
+    <string name="chatbot_fragment_chatbot">Digite sua mensagem</string>
+    <string name="btMap">Mapa</string>
 
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
 </resources>
