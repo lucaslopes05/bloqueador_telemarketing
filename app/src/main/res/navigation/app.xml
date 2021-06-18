@@ -19,15 +19,11 @@
     <fragment
         android:id="@+id/addBlackListFragment"
         android:name="com.example.bloqueador_telemarketing.ui.fragment.AddBlackListFragment"
-<<<<<<< HEAD
-        android:label="AddBlackListFragment" />
+        android:label="AddBlackListFragment"
+        tools:layout="@layout/fragment_add_black_list"/>
     <fragment
         android:id="@+id/mapFragment"
         android:name="com.example.bloqueador_telemarketing.ui.fragment.MapFragment"
-        android:label="fragment_map"
-        tools:layout="@layout/fragment_map" />
-=======
-        android:label="AddBlackListFragment"
-        tools:layout="@layout/fragment_add_black_list"/>
->>>>>>> master
+        android:label="fragment_map" />
+
 </navigation>

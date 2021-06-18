@@ -35,11 +35,3 @@ class AppActivity : FragmentActivity() {
         return database.getTBlackListNumDao()
     }
 }
-
-
-
-<<<<<<< HEAD
-//
-=======
-
->>>>>>> master

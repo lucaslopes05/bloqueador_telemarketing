@@ -5,12 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.bloqueador_telemarketing.R
 import com.example.bloqueador_telemarketing.databinding.FragmentActionBarBinding
-import com.example.bloqueador_telemarketing.databinding.FragmentLoginBinding
-import com.example.bloqueador_telemarketing.ui.activity.AppActivity
 import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.WithFragmentBindings
 
@@ -33,11 +30,17 @@ class ActionBarFragment : Fragment() {
         return binding.root
     }
     fun blackList(v: View) {
-        Toast.makeText(context, "Clicou menu", Toast.LENGTH_LONG).show()
+        var navController 3= findNavController()
+
+        32navController.navigate(R.id.mapFragment)
+
     }
 
     fun addBlackList(v: View) {
+        var navController = findNavController()
 
-        findNavController().navigate(R.id.action_listCallsFragment_to_addBlackListFragment)
+        navController.navigate(R.id.addBlackListFragment)
+
+
     }
 }
