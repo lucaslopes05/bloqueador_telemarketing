@@ -35,7 +35,3 @@ class AppActivity : FragmentActivity() {
         return database.getTBlackListNumDao()
     }
 }
-
-
-
-

@@ -22,6 +22,10 @@ class ListCallsFragment : Fragment() {
         findNavController().navigate(R.id.action_listCallsFragment_to_addBlackListFragment)
     }
 
+    fun irMap(v : View){
+        findNavController().navigate(R.id.action_listCallsFragment_to_mapFragment)
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

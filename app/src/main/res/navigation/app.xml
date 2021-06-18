@@ -12,10 +12,18 @@
         <action
             android:id="@+id/action_listCallsFragment_to_addBlackListFragment"
             app:destination="@id/addBlackListFragment" />
+        <action
+            android:id="@+id/action_listCallsFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
     </fragment>
     <fragment
         android:id="@+id/addBlackListFragment"
         android:name="com.example.bloqueador_telemarketing.ui.fragment.AddBlackListFragment"
         android:label="AddBlackListFragment"
         tools:layout="@layout/fragment_add_black_list"/>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.bloqueador_telemarketing.ui.fragment.MapFragment"
+        android:label="fragment_map" />
+
 </navigation>
