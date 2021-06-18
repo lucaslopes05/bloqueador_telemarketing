@@ -12,7 +12,7 @@ import dagger.hilt.android.WithFragmentBindings
 @AndroidEntryPoint
 @WithFragmentBindings
 
-class ListCallsFragment : Fragment() {
+class HomeListFragment : Fragment() {
 
     private lateinit var binding : FragmentListCallsBinding
 

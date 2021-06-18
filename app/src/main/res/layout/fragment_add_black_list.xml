@@ -8,9 +8,7 @@
         <variable
             name="addBlackList"
             type="com.example.bloqueador_telemarketing.ui.fragment.AddBlackListFragment" />
-        <variable
-            name="testeDao"
-            type="com.example.bloqueador_telemarketing.ui.activity.AppActivity" />
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -23,7 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_marginTop="16dp"
-            android:onClick="@{addBlackList::addBlackList}"
+
             android:text="@string/add_black_list"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

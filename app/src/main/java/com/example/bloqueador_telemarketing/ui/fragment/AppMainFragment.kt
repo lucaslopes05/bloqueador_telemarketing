@@ -6,8 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.bloqueador_telemarketing.R
+import dagger.hilt.android.AndroidEntryPoint
+import dagger.hilt.android.WithFragmentBindings
 
-
+@AndroidEntryPoint
+@WithFragmentBindings
 class AppMainFragment : Fragment() {
 
     override fun onCreateView(

@@ -9,8 +9,7 @@ import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.bloqueador_telemarketing.R
 import com.example.bloqueador_telemarketing.databinding.FragmentActionBarBinding
-import com.example.bloqueador_telemarketing.databinding.FragmentLoginBinding
-import com.example.bloqueador_telemarketing.ui.activity.AppActivity
+
 import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.WithFragmentBindings
 
@@ -38,6 +37,6 @@ class ActionBarFragment : Fragment() {
 
     fun addBlackList(v: View) {
 
-        findNavController().navigate(R.id.action_listCallsFragment_to_addBlackListFragment)
+        //findNavController().navigate(R.id.action_blackListFragment_to_addBlackListFragment22)
     }
 }
