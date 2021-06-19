@@ -72,7 +72,7 @@ class ChatbotFragment : Fragment() {
     }
     private fun sendMessage(msg: String, userId: String) {
         val index: Int = messageList.size
-        val retrofit = Retrofit.Builder().baseUrl("https://dialogflow-server-helppro-pi2.herokuapp.com/api/").addConverterFactory(
+        val retrofit = Retrofit.Builder().baseUrl("https://dialogflow-bloq-telemk.herokuapp.com/api/").addConverterFactory(
             GsonConverterFactory.create()).build()
         val service = retrofit.create(ChatService::class.java)
         CoroutineScope(Dispatchers.IO).launch {

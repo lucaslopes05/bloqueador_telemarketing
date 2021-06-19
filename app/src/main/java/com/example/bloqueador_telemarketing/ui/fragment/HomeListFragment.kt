@@ -19,11 +19,11 @@ class HomeListFragment : Fragment() {
     private lateinit var binding : FragmentListCallsBinding
 
     fun irAddBlackList(v : View){
-        findNavController().navigate(R.id.action_listCallsFragment_to_addBlackListFragment)
+//        findNavController().navigate(R.id.action_listCallsFragment_to_addBlackListFragment)
     }
 
     fun irMap(v : View){
-        findNavController().navigate(R.id.action_listCallsFragment_to_mapFragment)
+//        findNavController().navigate(R.id.action_listCallsFragment_to_mapFragment)
     }
 
     override fun onCreateView(
